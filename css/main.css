@@ -173,8 +173,9 @@ table {
 	color: #fff;
 	font-family: 'Brandon-Grotesque', sans-serif;
 	font-size: 34px;
+	font-style: normal;
 	font-weight: 100;
-	line-height: 42px;
+	line-height: 50px;
 	margin-top: 30px;
 	text-align: center;
 	text-transform: uppercase;
@@ -189,7 +190,8 @@ table {
 	color: #FF99CC;
 	font-family: 'Brandon-Grotesque', sans-serif;
 	font-size: 30px;
-	font-weight: 400;
+	font-style: normal;
+	font-weight: 700;
 	text-align: center;
 	text-transform: uppercase;
 	margin: 80px 0 0 0;
@@ -235,6 +237,7 @@ table {
 	color: #fff;
 	font-family: 'Brandon-Grotesque', sans-serif;
 	font-size: 32px;
+	font-style: normal;
 	font-weight: 100;
 	line-height: 48px;
 	margin-top: 16px;
@@ -252,7 +255,8 @@ table {
 	color: #FF99CC;
 	font-family: 'Brandon-Grotesque', sans-serif;
 	font-size: 40px;
-	font-weight: 400;
+	font-style: normal;
+	font-weight: 700;
 	text-align: center;
 	text-transform: uppercase;
 	margin: 70px 0 0 0;
@@ -308,7 +312,7 @@ table {
 	color: #99CCFF;
 }
 
-#contact-info iframe {
+#contact-info img {
 	margin: 20px 0 20px 0;
 }
 
@@ -366,6 +370,7 @@ table {
 	color: #fff;
 	font-family: 'Brandon-Grotesque', sans-serif;
 	font-size: 34px;
+	font-style: normal;
 	font-weight: 100;
 	line-height: 42px;
 	margin-top: 30px;
