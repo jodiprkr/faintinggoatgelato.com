@@ -277,7 +277,7 @@ table {
 #contact-info {
 	background-color: rgba(255, 255, 250, 0.93);
 	border-radius: 5px;
-	margin: -920px 0 140px 0;
+	margin: -920px 0 130px 0;
 	padding: 30px;
 	position: relative;
 	text-align: center;
@@ -335,7 +335,7 @@ table {
 
 #social {
 	float: right;
-	width: 235px;
+	width: 175px;
 }
 
 #social li {
