@@ -99,7 +99,7 @@ table {
   clear: both;
 }
 
-.header {
+header {
 	position: fixed;
 	width: 100%;
 	padding: 4px 0;
@@ -124,12 +124,12 @@ table {
 	text-decoration: none;
 }
 
-#nav {
+nav {
 	float: right;
 	width: 450px;
 }
 
-#nav li {
+nav li {
 	font-family: 'Lato', sans-serif;
 	font-size: 16px;
 	width: 100px;
@@ -138,14 +138,14 @@ table {
 	display: inline-block;
 }
 
-#nav li a {
+nav li a {
 	text-decoration: none;
 	color: #666;
 	display: block;
 	padding: 40px 0;
 }
 
-#nav li a:hover {
+nav li a:hover {
 	color: #FFB2E6;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
@@ -316,13 +316,13 @@ table {
 	margin: 20px 0 20px 0;
 }
 
-#footer {
+footer {
 	display: block;
 	width: 100%;
 	margin-bottom: 20px;
 }
 
-#footer p {
+footer p {
 	color: #666;
 	font-family: 'Arial', sans-serif;
 	font-size: 11px;
