@@ -321,7 +321,6 @@ nav li a:hover {
 footer {
 	display: block;
 	width: 100%;
-	margin-bottom: 20px;
 }
 
 footer p {
@@ -336,6 +335,8 @@ footer p {
 }
 
 #social {
+	float: right;
+	margin-bottom: 20px;
 	width: 175px;
 }
 
