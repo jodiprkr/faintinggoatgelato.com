@@ -79,8 +79,8 @@ table {
 
 .wrap-lg {
 	margin: 0 auto;
-	max-width: 1400px;
 	min-width: 1024px;
+	max-width: 1500px;
 }
 
 .bg {
@@ -106,6 +106,8 @@ header {
 	background-color: #FFFFFD;
 	box-shadow: 0px 0px 5px #666;
     top: 0;
+    left: 0;
+    right: 0;
     display: block;
     z-index: 99;
 }
