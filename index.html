@@ -4,10 +4,11 @@
 
     <head>
 
-        <title>Fainting Goat Gelato – Home</title>
+        <title>Fainting Goat Gelato – Fresh, Local, Organic</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="description" content="Fainting Goat Gelato is a small family business located in the heart of Seattle's Wallingford neighborhood.">
-        <meta name="author" content="Jodi Parker" />
+        <meta name="keywords" content="fainting goat, gelato, Seattle, best gelato, dessert, catering, Washington, Wallingford, local, organic, ice cream">
+        <meta name="author" content="Jodi Parker">
 
         <!--Google Fonts -->
         <link href='http://fonts.googleapis.com/css?family=Sacramento|Lato:300' rel='stylesheet' type='text/css'>
@@ -19,7 +20,7 @@
         <!--CSS -->
         <link rel="stylesheet" href="css/main.css">
 
-        <!-- Smooth scroll js -->
+        <!-- smooth scroll js -->
         <script type='text/javascript' src='http://code.jquery.com/jquery-1.6.4.js'></script>
         <script type='text/javascript'>
             $(window).load(function(){
@@ -30,6 +31,30 @@
                 return false;
             });
             });
+        </script>
+
+    <!-- Active nav states js -->
+    
+        <script>
+        $(window).scroll(function () {
+            var offset = $(window).scrollTop();
+            //alert(offset);
+            if(offset >= 0 && offset <= 752) {
+                $('#menu').removeClass('active');
+                $('#about').removeClass('active');
+                $('#home').addClass('active');
+            }
+            if(offset >=780 && offset <= 2170) {
+                $('#home').removeClass('active');
+                $('#about').removeClass('active');
+                $('#menu').addClass('active');
+            }
+            if(offset >= 2000) {
+                $('#home').removeClass('active');
+                $('#menu').removeClass('active');
+                $('#about').addClass('active');
+            }
+        });
         </script>
 
         <!-- Google Analytics JS -->
@@ -49,14 +74,13 @@
 
         <header class="wrap-lg">
             <h1><a href="#home" id="logo" class="group"><img src="img/logo.png" alt="Fainting Goat logo"></a></h1>
-                <nav>
-                    <ol class="group">
-                        <li><a href="#home" title="Go to our homepage">Home</a></li>
-                        <li><a href="#about" title="Read what we're all about">About</a></li>
-                        <li><a href="#menu" title="See what flavors we offer">Menu</a></li>
-                        <li><a href="#contact" title="Get in touch with us">Contact</a></li>
-                    </ol>
-                </nav>
+            
+            <ol id="nav" class="group">
+                <li class="active"><a href="#home" title="Go to our homepage">Home</a></li>
+                <li><a href="#about" title="Read what we're all about">About</a></li>
+                <li><a href="#menu" title="See what flavors we offer">Menu</a></li>
+                <li><a href="#contact" title="Get in touch with us">Contact</a></li>
+            </ol>
         </header><!-- /.wrap-lg-->
 
         <div class="bg" id="home">
