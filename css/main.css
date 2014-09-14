@@ -4,8 +4,7 @@
 */
 
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 sall, strike, strong, sub, sup, tt, var,
 b, u, i, center,
@@ -61,47 +60,33 @@ table {
 
 /* Style 
 /////////////////////////////////////////////////////////////////// */
-
-body {
-    height: 6000px;
-    font-family: Helvetica, Arial;
-}
-
 .wrap-sm {
 	margin: 0 auto;
 	width: 550px;
 }
 
-.wrap-md {
+.wrap-mid {
 	margin: 0 auto;
 	width: 730px;
-}
-
-.wrap-md img {
-	margin: 40px 0;
-	width: 100%;
 }
 
 .wrap-lg {
 	margin: 0 auto;
 	min-width: 1024px;
-	max-width: 1500px;
-}
-
-.bg {
-	margin: 0 auto;
-	max-width: 1440px;
-	min-width: 600px;
-}
-
-.bg img {
-	width: 100%;
+	max-width: 3000px;
 }
 
 .group:after {
   content: "";
   display: table;
   clear: both;
+}
+
+.text-bg {
+	background-color: rgba(255, 178, 230, 0.5);
+	border-radius: 5px;
+	padding: 30px;
+	position: relative;
 }
 
 header {
@@ -164,7 +149,33 @@ header {
 	color: #FFB2E6; 
 }
 
-#home-intro {
+article {
+	display: table;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+}
+
+article>.inner {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 100px 0;
+}
+
+#content {
+	height: 100%;
+	width: 100%;
+}
+
+#home {
+	background: url(../img/gelato-bev.jpg);
+	background-size: cover;
+	height: 830px;
+}
+
+#home h1 h2 {
 	background-color: rgba(255, 178, 230, 0.5);
 	border-radius: 5px;
 	margin: -650px 0 495px 0;
@@ -172,7 +183,7 @@ header {
 	position: relative;
 }
 
-#home-intro h1 {
+#home h1 {
 	color: #fff;
 	font-family: 'Sacramento', sans-serif;
 	font-size: 60px;
@@ -180,7 +191,7 @@ header {
 	text-align: center;
 }
 
-#home-intro h2 {
+#home h2 {
 	color: #fff;
 	font-family: 'Brandon-Grotesque', sans-serif;
 	font-size: 34px;
@@ -192,12 +203,12 @@ header {
 	text-transform: uppercase;
 }
 
-#about {
-	color: transparent;
-	padding-top: 50px;
+#about>.inner {
+	padding-left: 150px;
+	padding-right: 150px;
 }
 
-#about-intro h2 {
+#about h1, h2 {
 	color: #FF99CC;
 	font-family: 'Brandon-Grotesque', sans-serif;
 	font-size: 30px;
@@ -205,38 +216,40 @@ header {
 	font-weight: 700;
 	text-align: center;
 	text-transform: uppercase;
-	margin: 80px 0 0 0;
 	padding: 0 0 25px 0;
 }
 
-#about-intro p {
+#about h2 {
+	margin-top: 80px;
+}
+
+#about p {
 	font-family: 'Lato', sans-serif;
 	font-size: 24px;
 	line-height: 43px;
+	text-align: left;
 }
 
-#about-intro a {
+#about figure {
+	margin: 40px auto;
+}
+
+#about a {
 	color: #6699FF;
 	text-decoration: none;
 }
 
-#about-intro a:hover {
+#about a:hover {
 	color: #99CCFF;
 }
 
 #menu {
-	margin-top: 100px;
+	background: url(../img/gelato-dots.jpg);
+	background-size: cover;
+	height: 960px;
 }
 
-#menu-intro {
-	background-color: rgba(255, 178, 230, 0.5);
-	border-radius: 5px;
-	position: relative;
-	padding: 22px 16px;
-	margin: -650px 0 480px 0;
-}
-
-#menu-intro h1 {
+#menu h1 {
 	color: #FFF;
 	font-family: 'Sacramento', sans-serif;
 	font-size: 60px;
@@ -244,7 +257,7 @@ header {
 	text-align: center;
 }
 
-#menu-intro h2 {
+#menu h2 {
 	color: #fff;
 	font-family: 'Brandon-Grotesque', sans-serif;
 	font-size: 32px;
@@ -262,7 +275,7 @@ header {
 	-webkit-column-count:3; /* Safari and Chrome */
 }
 
-.menu-flavors h2 {
+.menu-flavors h1, h2 {
 	color: #FF99CC;
 	font-family: 'Brandon-Grotesque', sans-serif;
 	font-size: 40px;
@@ -270,8 +283,11 @@ header {
 	font-weight: 700;
 	text-align: center;
 	text-transform: uppercase;
-	margin: 70px 0 0 0;
 	padding: 0 0 25px 0;
+}
+
+.menu-flavors h2 {
+	margin-top: 80px;
 }
 
 .menu-flavors li {
@@ -279,22 +295,23 @@ header {
 	font-size: 24px;
 	line-height: 43px;
 	margin-left: 40px;
+	text-align: left;
 }
 
 #contact {
-	margin-top: 70px;
+	background: url(../img/wallingford-2.jpg);
+	background-size: cover;
 }
 
-#contact-info {
+#contact-text {
 	background-color: rgba(255, 255, 250, 0.93);
 	border-radius: 5px;
-	margin: -920px 0 130px 0;
 	padding: 30px;
 	position: relative;
 	text-align: center;
 }
 
-#contact-info h1 {
+#contact-text h1 {
 	color: #FF99CC;
 	font-family: 'Sacramento', sans-serif;
 	font-size: 60px;
@@ -303,7 +320,7 @@ header {
 	text-align: center;
 }
 
-#contact-info p {
+#contact-text p {
 	color: #666;
 	font-family: 'Lato', sans-serif;
 	font-size: 24px;
@@ -311,7 +328,7 @@ header {
 	margin: 0 auto;
 }
 
-#contact-info a {
+#contact-text a {
 	color: #64A4FF;
 	font-family: 'Lato', sans-serif;
 	font-size: 24px;
@@ -319,16 +336,17 @@ header {
 	text-decoration: none;
 }
 
-#contact-info a:hover {
+#contact-text a:hover {
 	color: #99CCFF;
 }
 
-#contact-info img {
+#contact-text img {
 	margin: 20px 0 20px 0;
 }
 
 footer {
 	display: block;
+	padding-top: 25px;
 	width: 100%;
 }
 
@@ -365,30 +383,30 @@ footer p {
 	-webkit-transition-duration: 500ms;
 }
 
-#error {
-	background-color: rgba(255, 178, 230, 0.5);
+#error-intro {
 	border-radius: 5px;
-	margin: -650px 0 440px 0;
+	margin: -700px auto 440px auto;
 	padding: 30px;
 	position: relative;
 }
 
-#error h1 {
-	color: #fff;
-	font-family: 'Sacramento', sans-serif;
-	font-size: 60px;
+#error-intro h1 {
+	color: rgba(255, 255, 255, .85);
+	font-family: "grafolita-script", italic;	
+	font-size: 70px;
 	font-weight: 100;
 	text-align: center;
 }
 
-#error h2 {
-	color: #fff;
-	font-family: 'Brandon-Grotesque', sans-serif;
-	font-size: 34px;
+#error-intro p {
+	color: rgba(0, 0, 0, .7);
+	font-family: "azo-sans-web", sans-serif;
+	font-size: 38px;
 	font-style: normal;
-	font-weight: 100;
-	line-height: 42px;
-	margin-top: 30px;
+	font-weight: 300;
+	line-height: 50px;
+	margin: 0 auto;
+	padding: 30px 0;
 	text-align: center;
-	text-transform: uppercase;
+	width: 480px;
 }

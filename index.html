@@ -20,6 +20,9 @@
         <!--CSS -->
         <link rel="stylesheet" href="css/main.css">
 
+        <!-- Favicon -->
+        <link rel=”shortcut icon” href=”img/favicon.ico”/>
+
         <!-- smooth scroll js -->
         <script type='text/javascript' src='http://code.jquery.com/jquery-1.6.4.js'></script>
         <script type='text/javascript'>
@@ -31,30 +34,6 @@
                 return false;
             });
             });
-        </script>
-
-    <!-- Active nav states js -->
-    
-        <script>
-        $(window).scroll(function () {
-            var offset = $(window).scrollTop();
-            //alert(offset);
-            if(offset >= 0 && offset <= 752) {
-                $('#menu').removeClass('active');
-                $('#about').removeClass('active');
-                $('#home').addClass('active');
-            }
-            if(offset >=780 && offset <= 2170) {
-                $('#home').removeClass('active');
-                $('#about').removeClass('active');
-                $('#menu').addClass('active');
-            }
-            if(offset >= 2000) {
-                $('#home').removeClass('active');
-                $('#menu').removeClass('active');
-                $('#about').addClass('active');
-            }
-        });
         </script>
 
         <!-- Google Analytics JS -->
@@ -83,141 +62,149 @@
             </ol>
         </header><!-- /.wrap-lg-->
 
-        <div class="bg" id="home">
-            <img src="img/gelato-bev.jpg" alt="" />
-        </div><!-- /.bg -->
+        <section id="content">
 
-        <span id="about">.</span><!-- hidden hook for navigation -->
-        
-        <div class="wrap-sm">
-            <section id="home-intro">
-                <h1>Fresh. Local. Organic.</h1> 
-                <h2>Handcrafted gelato in the heart of Seattle</h2>
-            </section><!-- /#home-intro--> 
-        </div><!-- /.wrap-sm -->
+            <article id="home">
+                <div class="inner">
+                    <div class="wrap-sm text-bg">
+                        <h1>Fresh. Local. Organic.</h1> 
+                        <h2>Handcrafted gelato in the heart of Seattle</h2>
+                    </div>
+                </div>
+            </article>
 
-        <div class="wrap-md">
-            <section id="about-intro">
-                <h2>About Us</h2>
-                <p>Established in 2009, Fainting Goat Gelato is a small family business in the unique Wallingford neighborhood of Seattle. All of our gelato is handcrafted daily in our shop to ensure maximum freshness and quality. Our heart and soul goes into every batch, and we are proud to serve our delicious creations to our customers.</p>
-                
-                <figure>
-                    <img src="img/sevim-yalcin-1.jpg" alt="" />
-                </figure>
-                
-                <p>It has been our dream to own a small shop ever since we moved to Seattle from our hometown of Izmir, Turkey in ’97. With the help and support of our three daughters, we opened up shop in this wonderful neighborhood, where we have been welcomed by our community with open arms.</p>
-                
-                <h2>What is Gelato?</h2>    
-                <p>Gelato is an Italian form of ice cream. In the making, gelato has a lower fat content when compared to traditional American ice cream. In addition to being healthier, less fat also allows for less ice crystals in the gelato. During the freezing process, gelato is slow-churned, resulting in intense flavors and a dense, velvety texture.</p>   
-            
-                <h2>What makes our gelato different?</h2>
-                <p>Having the right base is crucial when it comes to making gelato, which is why we use organic milk from <a rel="external" href="http://www.freshbreezeorganic.com/" target="_blank" title="Visit the Fresh Breeze Farms website">Fresh Breeze Farms</a> in Lynden, WA. We use locally sourced, seasonal fruits, and only the highest quality nuts. We are proud to be the first gelato shop in Seattle to use organic milk and sugar.</p>
-            </section><!-- /.about-intro-->
-        </div><!-- /.wrap-md-->
+            <article id="about">
+                <div class="inner">
+                    <div class="wrap-mid">
+                        <h1>About Us</h1>
 
-        <div class="bg" id="menu"> 
-            <img src="img/gelato-dots.jpg" alt="" />
-        </div><!-- /.bg-->
+                        <p>Established in 2009, Fainting Goat Gelato is a small family business in the unique Wallingford neighborhood of Seattle. All of our gelato is handcrafted daily in our shop to ensure maximum freshness and quality. Our heart and soul goes into every batch, and we are proud to serve our delicious creations to our customers.</p>
+                        
+                        <figure>
+                            <img src="img/sevim-yalcin-1.jpg" alt="" />
+                        </figure>
+                        
+                        <p>It has been our dream to own a small shop ever since we moved to Seattle from our hometown of Izmir, Turkey in ’97. With the help and support of our three daughters, we opened up shop in this wonderful neighborhood, where we have been welcomed by our community with open arms.</p>
+                        
+                        <h2>What is Gelato?</h2>    
 
-        <div class="wrap-sm">
-            <section id="menu-intro">
-                <h1>Menu</h1>
-                <h2>We rotate our flavors daily using only organic milk and high quality ingredients.</h2>
-            </section><!-- /#menu-intro-->
-        </div><!-- /.wrap-sm-->
-        
-        <div class="wrap-md">
-            <section class="menu-flavors">
-                <h2>Gelato</h2>
-                <div id="gelato">
-                    <ol>
-                        <li>Avocado</li>
-                        <li>Amaretto</li>
-                        <li>Banana Cream Pie</li>
-                        <li>Biscotti</li>
-                        <li>Chocolate</li>
-                        <li>Cinnamon</li>
-                        <li>Coconut</li>
-                        <li>Crème Brûlée</li>
-                        <li>Dark Chocolate</li>
-                        <li>Eggnog</li>
-                        <li>Espresso</li>
-                        <li>Mastic (Goat Milk)</li>
-                        <li>Fig Vanilla</li>
-                        <li>Fresh Ginger</li>
-                        <li>Green Tea</li>
-                        <li>Guinness</li>
-                        <li>Honey Rose</li>
-                        <li>Honey Lavender</li>
-                        <li>Irish Coffee</li>
-                        <li>Lemon Grisbi</li>
-                        <li>Mint</li>
-                        <li>Nougat</li>
-                        <li>Nutella</li>
-                        <li>Panna Cotta</li>
-                        <li>Peanut Butter</li>
-                        <li>Peanut Crunch</li>
-                        <li>Pumpkin Spice</li>
-                        <li>Raspberry Creme</li>
-                        <li>Salted Caramel</li>
-                        <li>Sicilian Pistachio</li>
-                        <li>Sour Cherry Swirl</li>
-                        <li>Stracciatella</li>
-                        <li>Spicy Chocolate</li>
-                        <li>Tiramisu</li>
-                        <li>Toasted Almond</li>
-                        <li>Turkish Hazelnut</li>
-                        <li>Tutti Frutti</li>
-                        <li>Vanilla</li>
-                        <li>Walnut</li>
-                        <li>White Chocolate</li>
-                        <li>Yogurt</li>
-                    </ol>
-                 </div><!-- /#gelato-->
+                        <p>Gelato is an Italian form of ice cream. In the making, gelato has a lower fat content when compared to traditional American ice cream. In addition to being healthier, less fat also allows for less ice crystals in the gelato. During the freezing process, gelato is slow-churned, resulting in intense flavors and a dense, velvety texture.</p>   
+                    
+                        <h2>What makes our gelato different?</h2>
 
-                <h2>Sorbetto</h2>
-                <div id="sorbetto">
-                    <ol>
-                        <li>Bilberry</li>
-                        <li>Forest Berries</li>
-                        <li>Green Apple</li>
-                        <li>Kiwi</li>
-                        <li>Lemon</li> 
-                        <li>Lemon Ginger</li>
-                        <li>Mango</li>
-                        <li>Mango Habanero</li>
-                        <li>Melon</li>
-                        <li>Orange</li>
-                        <li>Peach</li>
-                        <li>Pear</li>
-                        <li>Pineapple</li>
-                        <li>Pink Grapefruit</li>
-                        <li>Pink Guava</li>
-                        <li>Pom-Blueberry</li>
-                        <li>Raspberry</li>
-                        <li>Strawberry</li>
-                        <li>Virgin Mojito</li>
-                    </ol>
-                </div><!-- /#sorbetto-->
-            </section><!-- /.menu-flavors-->
-        </div><!-- /.wrap-md-->
+                        <p>Having the right base is crucial when it comes to making gelato, which is why we use organic milk from <a rel="external" href="http://www.freshbreezeorganic.com/" target="_blank" title="Visit the Fresh Breeze Farms website">Fresh Breeze Farms</a> in Lynden, WA. We use locally sourced, seasonal fruits, and only the highest quality nuts. We are proud to be the first gelato shop in Seattle to use organic milk and sugar.</p>
+                    </div>
+                </div>
+            </article>
 
-        <div class="bg" id="contact">
-            <img src="img/wallingford-2.jpg" alt="" />
-        </div><!-- /.bg -->
+            <article id="menu">
+                <div class="inner">
+                    <div class="wrap-sm text-bg">
+                        <h1>Menu</h1>
+                        <h2>We rotate our flavors daily using only organic milk and high quality ingredients.</h2>
+                    </div>
+                </div>
+            </article>
 
-        <div class="wrap-md">
-            <section id="contact-info">
-                <h1>Get in touch!</h1>
-                <p>1903 N 45th St.</p>
-                <p>Seattle, WA 98103</p>
-                <p><a href="https://www.google.com/maps/place/1903+N+45th+St,+Seattle,+WA+98103/@47.6611909,-122.3347497,17z/data=!3m1!4b1!4m2!3m1!1s0x549014575fceadb9:0xa63353239d5a56af" target="_blank" title="Find Fainting Goat Gelato on Google Maps">Get Directions</a></p>
-                <img src="img/watercolor-map.png" alt="">
-                <p>206.327.9459</p>
-                <a href="mailto:info@faintinggoatseattle.com" target="_top" title="Email Fainting Goat Gelato">info@faintinggoatseattle.com</a>
-                <p>Open 12-11pm daily</p>
-            </section><!-- /#contact-info-->
-        </div><!-- /.wrap-md-->
+            <article id="menu-text">
+                <div class="inner">
+                    <div class="wrap-mid menu-flavors">
+                        <h1>Gelato</h1>
+
+                        <div id="gelato">
+                            <ol>
+                                <li>Avocado</li>
+                                <li>Amaretto</li>
+                                <li>Banana Cream Pie</li>
+                                <li>Biscotti</li>
+                                <li>Chocolate</li>
+                                <li>Cinnamon</li>
+                                <li>Coconut</li>
+                                <li>Crème Brûlée</li>
+                                <li>Dark Chocolate</li>
+                                <li>Eggnog</li>
+                                <li>Espresso</li>
+                                <li>Mastic (Goat Milk)</li>
+                                <li>Fig Vanilla</li>
+                                <li>Fresh Ginger</li>
+                                <li>Green Tea</li>
+                                <li>Guinness</li>
+                                <li>Honey Rose</li>
+                                <li>Honey Lavender</li>
+                                <li>Irish Coffee</li>
+                                <li>Lemon Grisbi</li>
+                                <li>Mint</li>
+                                <li>Nougat</li>
+                                <li>Nutella</li>
+                                <li>Panna Cotta</li>
+                                <li>Peanut Butter</li>
+                                <li>Peanut Crunch</li>
+                                <li>Pumpkin Spice</li>
+                                <li>Raspberry Creme</li>
+                                <li>Salted Caramel</li>
+                                <li>Sicilian Pistachio</li>
+                                <li>Sour Cherry Swirl</li>
+                                <li>Stracciatella</li>
+                                <li>Spicy Chocolate</li>
+                                <li>Tiramisu</li>
+                                <li>Toasted Almond</li>
+                                <li>Turkish Hazelnut</li>
+                                <li>Tutti Frutti</li>
+                                <li>Vanilla</li>
+                                <li>Walnut</li>
+                                <li>White Chocolate</li>
+                                <li>Yogurt</li>
+                            </ol>
+                         </div><!-- /#gelato-->
+
+                        <h2>Sorbetto</h2>
+                        <div id="sorbetto">
+                            <ol>
+                                <li>Bilberry</li>
+                                <li>Forest Berries</li>
+                                <li>Green Apple</li>
+                                <li>Kiwi</li>
+                                <li>Lemon</li> 
+                                <li>Lemon Ginger</li>
+                                <li>Mango</li>
+                                <li>Mango Habanero</li>
+                                <li>Melon</li>
+                                <li>Orange</li>
+                                <li>Peach</li>
+                                <li>Pear</li>
+                                <li>Pineapple</li>
+                                <li>Pink Grapefruit</li>
+                                <li>Pink Guava</li>
+                                <li>Pom-Blueberry</li>
+                                <li>Raspberry</li>
+                                <li>Strawberry</li>
+                                <li>Virgin Mojito</li>
+                            </ol>
+                        </div><!-- /#sorbetto-->
+                    </div>
+                </div>
+            </article>
+
+            <article id="contact">
+                <div class="inner">
+                    <div class="wrap-mid" id="contact-text">
+                        <h1>Get in touch!</h1>
+
+                        <p>1903 N 45th St.</p>
+                        <p>Seattle, WA 98103</p>
+
+                        <p><a href="https://www.google.com/maps/place/1903+N+45th+St,+Seattle,+WA+98103/@47.6611909,-122.3347497,17z/data=!3m1!4b1!4m2!3m1!1s0x549014575fceadb9:0xa63353239d5a56af" target="_blank" title="Find Fainting Goat Gelato on Google Maps">Get Directions</a></p>
+                        <img src="img/watercolor-map.png" alt="">
+
+                        <p>206.327.9459</p>
+
+                        <a href="mailto:info@faintinggoatseattle.com" target="_top" title="Email Fainting Goat Gelato">info@faintinggoatseattle.com</a>
+
+                        <p>Open 12-11pm daily</p>
+                    </div>
+                </div>
+            </article>
+        </section>
         
         <footer class="wrap-lg">
             <p class="group">&copy;Copyright 2014 Fainting Goat Gelato — Seattle, WA</p>
