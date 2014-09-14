@@ -85,7 +85,6 @@ table {
 .text-bg {
 	background-color: rgba(255, 178, 230, 0.5);
 	border-radius: 5px;
-	padding: 30px;
 	position: relative;
 }
 
@@ -178,8 +177,6 @@ article>.inner {
 #home h1 h2 {
 	background-color: rgba(255, 178, 230, 0.5);
 	border-radius: 5px;
-	margin: -650px 0 495px 0;
-	padding: 30px;
 	position: relative;
 }
 
@@ -188,6 +185,7 @@ article>.inner {
 	font-family: 'Sacramento', sans-serif;
 	font-size: 60px;
 	font-weight: 100;
+	padding: 30px 20px 0 20px;
 	text-align: center;
 }
 
@@ -198,7 +196,7 @@ article>.inner {
 	font-style: normal;
 	font-weight: 100;
 	line-height: 50px;
-	margin-top: 30px;
+	padding: 30px 20px;
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -208,7 +206,7 @@ article>.inner {
 	padding-right: 150px;
 }
 
-#about h1, h2 {
+#about h1 {
 	color: #FF99CC;
 	font-family: 'Brandon-Grotesque', sans-serif;
 	font-size: 30px;
@@ -216,10 +214,11 @@ article>.inner {
 	font-weight: 700;
 	text-align: center;
 	text-transform: uppercase;
-	padding: 0 0 25px 0;
+	padding-bottom: 25px;
 }
 
 #about h2 {
+	font-size: 30px;
 	margin-top: 80px;
 }
 
@@ -254,6 +253,7 @@ article>.inner {
 	font-family: 'Sacramento', sans-serif;
 	font-size: 60px;
 	font-weight: 100;
+	padding-top: 30px;
 	text-align: center;
 }
 
@@ -264,7 +264,7 @@ article>.inner {
 	font-style: normal;
 	font-weight: 100;
 	line-height: 48px;
-	margin-top: 16px;
+	padding: 20px 20px 30px 20px;
 	text-align: center;
 	text-transform: uppercase;
 }
