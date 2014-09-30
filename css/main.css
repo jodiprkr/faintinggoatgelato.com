@@ -310,7 +310,7 @@ article>.inner {
 	font-family: 'Sacramento', sans-serif;
 	font-size: 60px;
 	font-weight: 400;
-	padding-bottom: 15px;
+	padding: 20px 0 15px 0;
 	text-align: center;
 }
 
@@ -336,6 +336,10 @@ article>.inner {
 
 #contact-text img {
 	margin: 20px 0 20px 0;
+}
+
+#contact-text #hours {
+	margin: 40px auto 30px auto;
 }
 
 footer {
