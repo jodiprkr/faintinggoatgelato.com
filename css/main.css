@@ -87,6 +87,15 @@ table {
 	position: relative;
 }
 
+.offscreen {
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+
 header {
 	position: fixed;
 	width: 100%;
