@@ -48,39 +48,43 @@
 
     <body>
 
-        <div class="header">
-            <div class="wrap-lg">
-                <a href="index.html" id="logo" class="group"><img src="img/logo.png" alt="Fainting Goat logo"></a>
-                <ol id="nav" class="group">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#menu">Menu</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
-                </ol><!-- /#.nav -->
-            </div><!-- /.wrap-lg -->
-        </div><!-- /.header -->
+        <header class="wrap-lg">
+            <a href="#skip" class="offscreen">Skip Content</a><!-- skip content option for screen readers - hidden offscreen -->
 
-        <div class="bg" id="home">
-            <img src="img/cones-bev.jpg" alt="Delicious gelato mmmmm..." />
-        </div><!-- /.bg -->
+            <h1><a href="index.html" id="logo" class="group"><img src="img/logo.png" alt="Fainting Goat logo"></a></h1>
+            
+            <ol id="nav" class="group">
+                <li><a href="#home" title="Go to our homepage">Home</a></li>
+                <li><a href="#about" title="Read what we're all about">About</a></li>
+                <li><a href="#menu" title="See what flavors we offer">Menu</a></li>
+                <li><a href="#contact" title="Get in touch with us">Contact</a></li>
+            </ol>
+        </header><!-- /.wrap-lg-->
+
+        <section id="content">
+
+            <article id="error">
+                <div class="inner">
+                    <div class="wrap-sm error-intro text-bg">
+                        <a name="skip"></a><!-- screen readers skip to here -->
+
+                        <h1>Oh no!</h1> 
+                        <h2>The page you're looking for does not exist.</h2>
+                    </div><!-- /#error-intro--> 
+                </div>
+            </article><!-- /#error -->
+
+        </section>
         
-        <div class="wrap-sm">
-            <section id="error">
-                <h1>Oh no!</h1> 
-                <h2>The page you're looking for does not exist.</h2>
-            </section><!-- /#error--> 
-        </div><!-- /.wrap-sm -->
-        
-        <div class="wrap-lg">
-            <div id="footer" class="group">
-                <p class="group">&copy;Copyright 2014 Fainting Goat Gelato — Seattle, WA</p>
-                <ul id="social" class="group">
-                    <li><a href="http://yelp.com/biz/fainting-goat-gelato-seattle" target="_blank"><img src="img/yelp.jpg" alt="yelp"></a></li>
-                    <li><a href="http://instagram.com/FaintingGoatGelatoSeattle" target="_blank"><img src="img/instagram.jpg" alt="instagram"></a></li>
-                    <li><a href="http://facebook.com/pages/Fainting-Goat-Gelato/83214543492" target="_blank"><img src="img/facebook.jpg" alt="facebook"></a></li>
-               </ul><!-- /#social -->
-            </div><!-- /#footer -->
-        </div><!-- /.wrap-lg -->
+        <footer class="wrap-lg">
+            <p class="group">&copy;Copyright 2014 Fainting Goat Gelato — Seattle, WA</p>
+
+            <ol id="social" class="group">
+                <li><a href="http://yelp.com/biz/fainting-goat-gelato-seattle" target="_blank" title="Read our reviews on Yelp"><img src="img/yelp.jpg" alt=""></a></li>
+                <li><a href="http://instagram.com/FaintingGoatGelatoSeattle" target="_blank" title="Follow us on Instagram"><img src="img/instagram.jpg" alt=""></a></li>
+                <li><a href="http://facebook.com/pages/Fainting-Goat-Gelato/83214543492" target="_blank" title="Like us on Facebook"><img src="img/facebook.jpg" alt=""></a></li>
+           </ol><!-- /#social -->
+        </footer><!-- /.wrap-lg-->
 
     </body>
 

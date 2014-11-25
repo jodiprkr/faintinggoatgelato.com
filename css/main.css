@@ -198,7 +198,7 @@ article>.inner {
 	font-style: normal;
 	font-weight: 100;
 	line-height: 50px;
-	padding: 30px 20px;
+	padding: 20px 20px 30px 20px;
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -215,8 +215,15 @@ article>.inner {
 }
 
 #about h2 {
+	color: #FF99CC;
+	font-family: 'Brandon-Grotesque', sans-serif;
 	font-size: 30px;
+	font-style: normal;
+	font-weight: 700;
 	margin-top: 80px;
+	padding-bottom: 25px;
+	text-align: center;
+	text-transform: uppercase;
 }
 
 #about p {
@@ -272,7 +279,7 @@ article>.inner {
 	-webkit-column-count:3; /* Safari and Chrome */
 }
 
-.menu-flavors h1, h2 {
+.menu-flavors h1 {
 	color: #FF99CC;
 	font-family: 'Brandon-Grotesque', sans-serif;
 	font-size: 40px;
@@ -284,7 +291,15 @@ article>.inner {
 }
 
 .menu-flavors h2 {
+	color: #FF99CC;
+	font-family: 'Brandon-Grotesque', sans-serif;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 700;
 	margin-top: 80px;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 0 0 25px 0;
 }
 
 .menu-flavors li {
@@ -386,30 +401,29 @@ footer p {
 	-webkit-transition-duration: 500ms;
 }
 
-#error-intro {
-	border-radius: 5px;
-	margin: -700px auto 440px auto;
-	padding: 30px;
-	position: relative;
+#error {
+	background: url(../img/cones-bev.jpg);
+	background-size: cover;
+	height: 830px;
 }
 
-#error-intro h1 {
-	color: rgba(255, 255, 255, .85);
-	font-family: "grafolita-script", italic;	
-	font-size: 70px;
+.error-intro h1 {
+	color: rgba(255, 255, 255, 1);
+	font-family: 'Sacramento', italic;
+	font-size: 80px;
 	font-weight: 100;
+	padding: 25px 0 15px 0;
 	text-align: center;
 }
 
-#error-intro p {
-	color: rgba(0, 0, 0, .7);
-	font-family: "azo-sans-web", sans-serif;
-	font-size: 38px;
+.error-intro h2 {
+	color: #fff;
+	font-family: 'Brandon-Grotesque', sans-serif;
+	font-size: 34px;
 	font-style: normal;
-	font-weight: 300;
-	line-height: 50px;
-	margin: 0 auto;
-	padding: 30px 0;
+	font-weight: 100;
+	line-height: 44px;
+	padding: 0 20px 25px 20px;
 	text-align: center;
-	width: 480px;
+	text-transform: uppercase;
 }
